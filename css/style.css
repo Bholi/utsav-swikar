@@ -1,0 +1,363 @@
+/********** Template CSS **********/
+:root {
+    --primary: #b565ee;
+    --secondary: #4e3939;
+    --light: #6d93f3;
+    --dark: #05182a;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+    font-size: 15pt !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.pt-6 {
+    padding-top: 90px;
+}
+
+.pb-6 {
+    padding-bottom: 90px;
+}
+
+.py-6 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.btn {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.top-shape::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: -17px;
+    background: var(--primary);
+    transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Barlow', sans-serif;
+    padding: 25px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(21, 36, 64, .7);
+    z-index: 1;
+}
+.img{
+    width: 347.8px;
+    height: 150px;
+}
+
+@media (max-width:500px) {
+    .carousel-caption h5 {
+        font-size: 8px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 20px;
+        font-weight: 600 !important;
+    }
+    .img{
+        width: 150px;
+        height: 100px;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+.png{
+    width: 347.8px;
+    height: 18rem;
+    margin: auto;
+    border: 1px dashed black ;
+    border-radius: 50% 50%;
+    padding: 10px;
+}
+.p1
+{
+    margin-top:50% !important;
+}
+.service1
+{
+    background: #05182a;
+    color: white;
+    height: 35vh;
+    background-image:url('https://image.cnbcfm.com/api/v1/image/106811484-1608045351058-gettyimages-1126750618-dsc_1540.jpeg?v=1608045431');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+position: relative;
+  z-index: 1;
+
+}
+.width
+{
+    
+ margin: auto !important;
+    width:100%;
+ 
+}
+.phone
+{
+    width: 100%;
+    margin-top:100px;
+    color: black !important;
+}
+.construct{
+    width: 80px;
+    height: 100px;
+}
+.cc{
+    color: black !important;
+    text-decoration: bold;
+}
+
+.bar-chart {
+    width: 80%;
+    margin: 15px auto;
+  }
+
+ 
+  
+  /* Bar Graph Horizontal */
+  .bar-graph .year {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    opacity: 0;
+  }
+  
+  .bar-graph-horizontal {
+    max-width: 380px;
+  }
+  
+  .bar-graph-horizontal > div {
+    float: left;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  
+  .bar-graph-horizontal .year {
+    float: left;
+    margin-top: 18px;
+    width: 50px;
+  }
+  
+  .bar-graph-horizontal .bar {
+    border-radius: 3px;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+  }
+  
+  .bar-graph-one .bar::after {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    top: 17px;
+  }
+  
+  .bar-graph-one .bar-one .bar {
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one 1.2s 0.1s forwards;
+    animation: show-bar-one 1.2s 0.1s forwards;
+  }
+  
+  .bar-graph-one .bar-two .bar {
+    background-color: #5292ac;
+    -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two 1.2s 0.2s forwards;
+    animation: show-bar-two 1.2s 0.2s forwards;
+  }
+  
+  .bar-graph-one .bar-three .bar {
+    background-color: #407286;
+    -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three 1.2s 0.3s forwards;
+    animation: show-bar-three 1.2s 0.3s forwards;
+  }
+  
+  .bar-graph-one .bar-four .bar {
+    background-color: #2e515f;
+    -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four 1.2s 0.4s forwards;
+    animation: show-bar-four 1.2s 0.4s forwards;
+  }
+  
+  /* Bar Graph Horizontal Animations */
+  @-webkit-keyframes show-bar-one {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 69.6%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-two {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 71%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-three {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 74.7%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-four {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 76.8%;
+    }
+  }
+  
+  @-webkit-keyframes fade-in-text {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.company
+{
+    color: white;
+    text-align: left;
+    font-size: 36pt;
+}
+
+.des{
+    color: white;
+    text-align: justify;
+    text-align: justify;
+  text-justify: inter-word;
+
+}
+
+.bar-graph-one
+{
+    color: white;
+   
+}
+section{
+    color: white;
+    text-align: center !important;
+}
+.textp{
+    color: white;
+    font-size: 36pt;
+
+}
+.div
+{
+    margin-left: 70px;
+}
